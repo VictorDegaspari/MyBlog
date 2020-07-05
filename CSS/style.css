@@ -1,0 +1,225 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+
+
+
+/*Barra de navegacao*/
+ul{
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    justify-items: center;
+    align-items: center;
+    border: .5px solid rgb(145, 145, 145);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+   
+  }
+  ul li{
+    float: center; 
+}
+li a{
+ display: block;
+ padding: 0px 2em;
+ line-height: 3em;
+ text-decoration: none;
+ color: #f2f2f2;
+}
+ul{
+    height: 80px;
+}
+ul h2{
+    color:rgb(125, 125, 255) ;
+    padding-left: 51px;
+}
+.login{
+    margin-left: auto;
+    margin-right: 50px;
+    height: 30px;
+    width: auto;
+    border-style: solid;
+}
+
+
+
+
+
+
+/*HEADER*/
+header{
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    padding: 200px;
+    background-color: rgba(71, 61, 139, 0.733);
+    margin-left: 50px;
+    margin-right: 50px;
+    background: url(../imagens/wallpaper.jpg)no-repeat;
+    
+    background-size: 100%;
+    background-position: center;
+}
+header, main{
+    margin-bottom: 70px;
+}
+/*estilo dos textos do header*/
+header h1{
+  
+    color: white;
+}
+header p{
+    color: rgba(56, 50, 43, 0.692);
+}
+header button{
+    border-style: dotted;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    height: 50px;
+}
+header button, p{margin-bottom: 30px;}
+
+
+
+
+
+/*Main*/
+/*Main abaixo do header, "em que acreditamos"*/
+.acreditamos{
+ 
+    text-align: center;
+    border-bottom: 1px solid rgba(158, 152, 152, 0.74);
+}
+.acreditamos p{
+    margin-left: 50px;
+    margin-right: 50px;
+    color:rgba(56, 50, 43, 0.692) ;
+}
+.acreditamos h2{
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/*Main fotos, quem sou eu*/
+.meugrid {
+    text-align: center;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 30px;
+    
+    background-color: lightskyblue;
+}
+
+.textogrid p{
+    color: rgba(56, 50, 43, 0.692);
+}
+ .eu {width:  200px;
+border-radius: 6px;
+margin-right: 50px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+/*Main, o que fazemos*/
+
+.desenvolvemos {
+    text-align: center;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 30px;
+  
+  background-color: #c5c5c549;
+}
+.time{
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.textosgridbaixo{
+    color: rgba(56, 50, 43, 0.692);
+}
+
+
+
+
+
+/*novidades*/
+.novidades{
+    text-align: center;
+    border-top:1px solid rgba(158, 152, 152, 0.377) ;
+
+}
+
+.novidades,.finalgrid{
+    margin-bottom: 50px;
+}
+/*Grid Final*/
+.finalgrid{
+    text-align: center;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.finalgrid p {
+    margin-top: 15px;
+}
+
+/* Ultima informacao antes do footer*/
+.infofinal{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #c5c5c549;
+    padding: 100px;
+    border-radius: 6px;
+}
+
+
+
+/*rodape*/
+.tt{ text-decoration: none;
+color: white;
+margin: 0;
+
+}
+
+.logott{width: 45px;
+    margin: 0;
+
+
+}
+
+.insta{ text-decoration: none;
+    color: white;
+    margin: 0;
+    
+    }
+    
+    .logoinsta{width: 45px;
+        margin: 0;
+    
+    
+    }
+
+footer{
+ 
+    height: 200px;
+    border: solid 1px #e4e4e4;
+    margin-top: auto;
+    background-color: rgb(125, 125, 255);
+   
+}
