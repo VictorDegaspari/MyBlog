@@ -95,7 +95,7 @@ header{
   background-color: rgba(71, 61, 139, 0.733);
   margin-left: 50px;
   margin-right: 50px;
-  background: url(../imagens/wallpaper.jpg)no-repeat;
+  background: url(./wallpaper.jpg)no-repeat;
   
   background-size: 100%;
   background-position: center;
