@@ -10,11 +10,11 @@ function App() {
 
       <ul id="menu">
         <h2>Business</h2>
-        <li><a href={}>about</a></li>
-        <li><a href={}>work</a></li>
-        <li><a href={}>team</a></li>
-        <li><a href={}>blog</a></li>
-        <li><a href={}>contact</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#contact">contact</a></li>
 
         <a href="#" className="tron">Login</a>
       </ul>
