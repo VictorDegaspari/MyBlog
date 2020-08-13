@@ -124,7 +124,7 @@ function App() {
         <h2>Grow your business.</h2>
         <p>Today is the day to build the business of your dreams. Share your mission with the world — and blow your
                 customers away.</p>
-        <a href="#" class="botoes">Entre em contato</a>
+        <a href="#" className="botoes">Entre em contato</a>
       </div>
     </div>
 
