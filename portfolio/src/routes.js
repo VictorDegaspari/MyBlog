@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import About from './Pages/About'
 import Work from './Pages/Work'
 import Contact from './Pages/Contact'
-import Blog from './Pages/Blog';
+
 import Team from './Pages/Team';
 
 function Routes() {
@@ -15,7 +15,7 @@ function Routes() {
         <Route path="/about" component={About} />
         <Route path="/work" component={Work} />
         <Route path="/contact" component={Contact} />
-        <Route path="/" component={Blog} />
+     
         <Route path="/team" component={Team} />
        
     

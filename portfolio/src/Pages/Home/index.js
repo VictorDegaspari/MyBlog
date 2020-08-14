@@ -4,7 +4,7 @@ import Eu from './eu.jpg'
 import MenuVertical from '../../Components/Menu'
 import './styles.css';
 import { Link } from 'react-router-dom'
-
+import studyIcon from '../../icons/study.svg'
 function Home() {
   return (
 
@@ -12,15 +12,19 @@ function Home() {
 
     <div className="App">
       <MenuVertical/>
-      <header>
-
+      <header className="header-home">
+      
         <div className="quadrado">
           <h1>Victor Degaspari Desenvolvedor Web</h1>
           <p>criando oportunidades</p>
-          <Link to="/saibamais">
-          <button className="botoes">Saiba mais</button>
-        </Link>
-        </div>
+          <div className="buttons-container">
+            <Link to="/work" className="study">
+            
+            <img src={studyIcon} alt="Estudar"/>
+            Trabalho
+            </Link>
+            </div>
+            </div>
 
       </header>
 
@@ -30,7 +34,7 @@ function Home() {
           <p>EM QUE ACREDITAMOS?</p>
           <h2>TRABALHAMOS PARA FORNECER QUALIDADE AO CLIENTE POR UM PREÇO ACESSÍVEL</h2>
         </div>
-        
+
         <div className="meugrid">
           <div className="textogrid">
             <p></p>
@@ -40,9 +44,13 @@ function Home() {
             <p>Meu nome é Victor Degaspari tenho 18 anos e atualmete cursando Análise e Desenvolvimento na UTFPR.</p>
             <p>Sou um amante da tecnologia, dedico meu tempo estudando programação.</p>
             <p>nas horas livres assisto séries e jogo games online.</p>
-            <Link to="/saibamais">
-            <button className="botoes">Saber mais</button>
+            <div className="buttons-container">
+            <Link to="/about" className="study">
+            
+            <img src={studyIcon} alt="Estudar"/>
+            Saiba Mais
             </Link>
+            </div>
         
           </div>
           <div>
@@ -59,7 +67,7 @@ function Home() {
 
       <div className="desenvolvemos">
         <div className="desenvolvimento">
-          <img className="time "
+          <img className="dev"
             src={Devmobile} 
             alt="laptop"
             />
@@ -73,9 +81,13 @@ function Home() {
           <p></p>
           <p>Fornecemos serviços na área de construção de web sites e aplicativos mobile.</p>
           <p>Já foram feitos diversos projetos, todos com a qualidade de sempre a um preço acessível!</p>
-          <Link to="/saibamais">
-          <button className="botoes">Saber mais</button>
+          <div className="buttons-container">
+          <Link to="/about" className="study">
+          
+          <img src={studyIcon} alt="Estudar"/>
+          Saiba Mais
           </Link>
+          </div>
         </div>
       </div>
 
@@ -126,10 +138,16 @@ function Home() {
         <p>Today is the day to build the business of your dreams. Share your mission with the world — and blow your
                 customers away.</p>
 
-          <Link to="/contact">
-          <button className="botoes">Entre em contato</button>
-          </Link>
+                <div className="buttons-container">
+          <Link to="/contact" className="study">
+        
+          <img src={studyIcon} alt="Estudar"/>
+          Contact
+          </Link></div>
       </div>
+     <footer>
+       Victor Degaspari
+     </footer>
     </div>
 
   )

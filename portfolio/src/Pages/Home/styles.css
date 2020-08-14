@@ -1,60 +1,98 @@
-*{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 0;
-}
-
 /*HEADER*/
-header{
+.header-home {
+  width: 90%;
   box-sizing: border-box;
-  border-radius: 2px;
-  display: block;
+  border-radius: 3px;
+  display: flex;
   text-align: center;
-  padding: 200px;
-  background-color: rgba(71, 61, 139, 0.733);
-  margin-left: 50px;
-  margin-right: 50px;
-  background: url(./wallpaper.jpg)no-repeat;
-  
-  background-size: 100%;
+  padding: auto;
+  background-color: (71, 61, 139, 0.733);
+  margin-left: auto;
+  margin-right: auto;
+
+  background: url(./wallpaper.jpg) no-repeat;
+
+  background-size: auto;
   background-position: center;
 }
-header, main{
+.header-home,
+main {
   margin-bottom: 70px;
 }
-.quadrado{
-  box-sizing: border-box;
-  text-orientation: sideways;
-  margin-right: auto;
-  margin-left: 0;
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
 }
-/*estilo dos textos do header*/
-header h1{
 
-  color: white;
+.buttons-container a {
+  width: 4rem;
+  height: 1.4rem;
+  border-radius: 0.8rem;
+  font: 700 1.4rem Archivo;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+  transition: color 0.2s;
 }
-header p{
+
+.buttons-container a:first-child {
+  margin-right: 1.5rem;
+}
+
+.buttons-container a img {
+  width: 3.5rem;
+}
+
+.buttons-container a.study {
   color: rgba(56, 50, 43, 0.692);
 }
 
-header button, p{margin-bottom: 30px;}
+.buttons-container a.study:hover {
+  color: rgb(73, 105, 148);
+}
 
+.buttons-container img {
+  margin-right: .5rem;
+}
+.quadrado {
+  box-sizing: border-box;
 
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font: 700 1rem Archivo;
+}
+/*estilo dos textos do header*/
+.header-home h1 {
+  color: white;
+}
+.header-home p {
+  color: rgba(56, 50, 43, 0.692);
+}
 
-
+.header-home button,
+p {
+  margin-bottom: 30px;
+}
 
 /*Main*/
 /*Main abaixo do header, "em que acreditamos"*/
-.acreditamos{
-
+.acreditamos {
   text-align: center;
   border-bottom: 1px solid rgba(158, 152, 152, 0.74);
+  font: 700 1rem Archivo;
 }
-.acreditamos p{
+.acreditamos p {
   margin-left: 50px;
   margin-right: 50px;
-  color:rgba(56, 50, 43, 0.692) ;
+  color: rgba(56, 50, 43, 0.692);
 }
-.acreditamos h2{
+.acreditamos h2 {
   margin-left: 50px;
   margin-right: 50px;
   box-sizing: border-box;
@@ -63,28 +101,28 @@ header button, p{margin-bottom: 30px;}
   color: #000000;
 }
 
-
 /*Main fotos, quem sou eu*/
 .meugrid {
   text-align: center;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  
+  font: 700 1rem Archivo;
   background-color: lightskyblue;
 }
 
-.textogrid p{
+.textogrid p {
   color: rgba(56, 50, 43, 0.692);
 
   margin-left: auto;
 }
-.eu {width:  200px;
-border-radius: 6px;
-margin-right: 50px;
-margin-top: 20px;
-margin-bottom: 20px;
+.eu {
+  width: 200px;
+  border-radius: 6px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*Main, o que fazemos*/
@@ -93,136 +131,89 @@ margin-bottom: 20px;
   text-align: center;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-
-background-color: #c5c5c549;
+  font: 700 1rem Archivo;
+  background-color: #c5c5c549;
 }
 .textosgridbaixo h2 {
   color: #000000;
 }
-.time{
-  width: 600px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.dev {
+  width: 190px;
+  margin-top: 110px;
 }
-.textosgridbaixo{
+
+.textosgridbaixo {
   color: rgba(56, 50, 43, 0.692);
 }
 
-
-
-
-
 /*novidades*/
-.novidades{
+.novidades {
   text-align: center;
-  border-top:1px solid rgba(158, 152, 152, 0.377) ;
-
+  border-top: 1px solid rgba(158, 152, 152, 0.377);
+  font: 700 1rem Archivo;
 }
 
-.novidades,.finalgrid{
+.novidades,
+.finalgrid {
   margin-bottom: 50px;
 }
 /*Grid Final*/
-.finalgrid{
+.finalgrid {
   text-align: center;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+  font: 600 1rem Archivo;
 }
 .finalgrid p {
   margin-top: 15px;
 }
 
 /* Ultima informacao antes do footer*/
-.infofinal{
+.infofinal {
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
   background-color: #c5c5c549;
   padding: 100px;
   border-radius: 6px;
+  font: 700 1rem Archivo;
 }
-
-
 
 /*rodape*/
-.tt{ text-decoration: none;
-color: white;
-margin: 0;
 
-}
-
-.logott{width: 45px;
-  margin: 0;
-
-
-}
-
-.insta{ text-decoration: none;
-  color: white;
-  margin: 0;
-  
-  }
-  
-  .logoinsta{width: 45px;
-      margin: 0;
-  
-  
-  }
-
-footer{
-
+footer {
   height: 200px;
   border: solid 1px #e4e4e4;
   margin-top: auto;
   background-color: rgb(125, 125, 255);
- 
+  margin-top: 0.6rem;
 }
 /*demais botoes da pagina */
-.botoes {
-background: #87929F;
-background-image: -webkit-linear-gradient(top, #87929F, #000000);
-background-image: -moz-linear-gradient(top, #87929F, #000000);
-background-image: -ms-linear-gradient(top, #87929F, #000000);
-background-image: -o-linear-gradient(top, #87929F, #000000);
-background-image: linear-gradient(to bottom, #87929F, #000000);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 3px;
-height: 10px;
-line-height: 15px;
-color: #FFFFFF;
-font-family: sans-serif;
-width: 160px;
-font-size: 20px;
-font-weight: 150;
-padding: 20px;
-box-shadow: 1px 1px 20px 0px #000000;
--webkit-box-shadow: 1px 1px 7px 0px #000000;
--moz-box-shadow: 1px 1px 1px 0px #000000;
-text-shadow: 5px 3px 12px #000000;
-border: solid #000000 1px;
-text-decoration: none;
-display: inline-block;
-cursor: pointer;
-text-align: center;
-margin-bottom: 5px;
 
+@media (min-width: 1100px) {
+  .dev {
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  
-  .botoes:hover {
-border: solid #FFFFFF 1px;
-background: rgba(142, 119, 190, 0.86);
-background-image: -webkit-linear-gradient(top, rgba(142, 119, 190, 0.86), #010101);
-background-image: -moz-linear-gradient(top, rgba(142, 119, 190, 0.86), #010101);
-background-image: -ms-linear-gradient(top, rgba(142, 119, 190, 0.86), #010101);
-background-image: -o-linear-gradient(top, rgba(142, 119, 190, 0.86), #010101);
-background-image: linear-gradient(to bottom, rgba(142, 119, 190, 0.86), #010101);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 3px;
-text-decoration: none;
+
+  .quadrado {
+    box-sizing: border-box;
+
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font: 700 1.4rem Archivo;
+    margin-top: 10rem;
   }
+  .buttons-container {
+    justify-content: center;
+  }
+  .buttons-container a {
+    font-size: 1.4rem;
+  }
+}
